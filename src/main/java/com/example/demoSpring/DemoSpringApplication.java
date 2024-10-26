@@ -8,12 +8,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@SpringBootApplication
+@SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
 public class DemoSpringApplication {
 
 	public static void main(String[] args) {
-		ApplicationContext context = new AnnotationConfigApplicationContext(DemoSpringApplication.class);
+		//ApplicationContext context = new AnnotationConfigApplicationContext(DemoSpringApplication.class);
 		SpringApplication.run(DemoSpringApplication.class, args);
+
 	}
 
 	@RequestMapping("/")
