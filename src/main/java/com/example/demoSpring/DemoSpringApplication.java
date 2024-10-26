@@ -15,7 +15,7 @@ public class DemoSpringApplication {
 	public static void main(String[] args) {
 		//ApplicationContext context = new AnnotationConfigApplicationContext(DemoSpringApplication.class);
 		SpringApplication.run(DemoSpringApplication.class, args);
-
+	//sss
 	}
 
 	@RequestMapping("/")
